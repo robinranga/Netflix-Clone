@@ -141,6 +141,80 @@ main .head3 p{
     font-weight: bold;
 }
 
+.gradient-effect{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -30px;
+}
+
+.line-effect{
+    width: 110%;
+    height: 150px;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-left: -5%;
+}
+
+.background-effect{
+    width: 110%;
+    height: 150px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-left: -5%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    position: absolute;
+    top: 4px;
+
+
+}
+
+.secondary{
+    height: 400px;
+}
+
+.content{
+    padding-left: 80px;
+    position: relative;
+    top: -10px;
+
+}
+
+.text1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.filter{
+    display: flex;
+    gap: 24px;
+}
+
+.filter select{
+    background-color: #0f0f0f;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    appearance: none;
+}
+
+
+.slt1 , .slt2{
+    border: 1px grey solid;
+    background-color: #0f0f0f;
+    padding: 8px 17px;
+    border-radius: 5px;
+
+}
+
+
+
 
 
 
@@ -186,6 +260,35 @@ main .head3 p{
     .navbuttons{
         height: 24.32px;
     }
+    .background-effect , .line-effect{
+        width: 150%;
+        margin-left: -25%;
+
+    }
+    .filter{
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+    }
+    .text1{
+        font-size: 18px;
+    }
+    .content{
+        margin: auto;
+        top: -30px;
+        padding-left: 0;
+        width: 90vw;
+    }
+    .slt1 ,.slt2{
+        display: flex;
+        border: 1px solid rgb(81, 78, 78);
+        border-radius: 4px;
+        padding: 6px 17px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
     
 }
 
@@ -217,7 +320,17 @@ main .head3 p{
     .langselect select{
         width: 20px;
     }
+    .background-effect , .line-effect{
+        width: 160%;
+        margin-left: -30%;
+
+    }
 }
+
+
+
+
+
 
 @media screen and (width >= 1280px){
     .navbar{
@@ -225,6 +338,7 @@ main .head3 p{
     }
     main{
         width: 570px;
+        margin-top:80px;
     }
     main .head1 h1{
         font-size: 56px;
@@ -234,4 +348,8 @@ main .head3 p{
         font-weight: 500;
         font-size: 20px;
     }
+    .content{
+        padding-left: 140px;
+    }
+    
 }
